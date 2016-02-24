@@ -1,0 +1,247 @@
+@font-face {
+  font-family: CicleFina;
+  src: url('../fonts/CicleFina.ttf');
+  src: url('../fonts/ciclefina.otf');
+}
+
+@font-face {
+  font-family: GeosansLight;
+  src: url('../fonts/GeosansLight.ttf');
+}
+
+@font-face {
+  font-family: Eurasia;
+  src: url('../fonts/EURAWB__.ttf');
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: #EDDFC9;
+}
+
+#bg {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+article {
+  position: absolute;
+  height: 799px;
+  top: 50%;
+  margin-top: -400px;
+  left: 50%;
+  width: 483px;
+  margin-left: -241px;
+  background: url(../images/kiln1.jpg) no-repeat 50% 50%;
+  background-size: 483px 799px;
+  -moz-box-shadow: 0px 12px 17px 11px #888888;
+  -webkit-box-shadow: 0px 12px 17px 11px #888888;
+  box-shadow: 0px 12px 17px 11px #888888;
+}
+
+#content {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  bottom: 3px;
+}
+
+#textDiv {
+  position: relative;
+  margin: 0;
+  max-width: 484px;
+}
+
+h1 {
+  font-family: CicleFina,GeosansLight,Eurasia;
+  font-size: 4em;
+  color: #FAEA81;
+  margin: 0.7em 0;
+  text-shadow: 1px 1px #555;
+}
+
+h2 {
+  font-family: CicleFina,GeosansLight,Eurasia;
+  font-size: 3em;
+  text-align: left;
+  margin: 0 0 0 2.5em;
+  color: #FCDB00;
+  text-shadow: 1px 1px #555;
+}
+
+nav {
+  position: absolute;
+  top: 5em;
+  right: 2.8em;
+  height: auto;
+  width: 151px;
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 56px;
+    width: 100%;
+    background-color: #dedede;
+    opacity: .3;
+  }
+
+  .nav-items {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-align: center;
+    padding: .2em 0;
+    font: 0.9em arial;
+    color: #446FFC;
+    b {
+      color: #444;
+    }
+    a {
+      text-decoration: underline;
+      color: #446FFC;
+      line-height: 1.1em;
+    }
+
+  }
+
+}
+
+
+/* slideshow styles*/
+
+#container {
+  width:211px;
+  padding:0px;
+  margin:0 auto;
+  position:relative;
+  bottom: 0;
+  z-index:0;
+}
+
+#example {
+  width:328px;
+  height:317px;
+  position:relative;
+}
+
+/*
+	Slideshow
+*/
+
+#slides {
+  position:absolute;
+  top:15px;
+  left:4px;
+  z-index:100;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+  width:208px;
+  overflow:hidden;
+  position:relative;
+  display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container a {
+  width:570px;
+  height:270px;
+  display:block;
+  border: none;
+}
+
+.slides_container a img {
+  display:block;
+  border: none;
+}
+
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+  position:absolute;
+  top:107px;
+  left:-39px;
+  width:24px;
+  height:43px;
+  display:block;
+  z-index:101;
+}
+
+#slides .next {
+  left:214px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+  margin:10px auto 0;
+  width:100px;
+}
+
+.pagination li {
+  float:left;
+  margin:0 1px;
+  list-style:none;
+  display: none;
+}
+
+.pagination li a {
+  display:block;
+  width:12px;
+  height:0;
+  padding-top:12px;
+  background-image:url(../img/pagination.png);
+  background-position:0 0;
+  float:left;
+  overflow:hidden;
+}
+
+.pagination li.current a {
+  background-position:0 -12px;
+}
+
+
+/*
+	Anchors
+*/
+
+a:link,a:visited {
+  color:#599100;
+  text-decoration:none;
+}
+
+a:hover,a:active {
+  color:#599100;
+  text-decoration:underline;
+}
