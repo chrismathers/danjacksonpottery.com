@@ -33,15 +33,29 @@
         <div id="content">
 
             <div id="container">
-                <div id="example">
-                    <div class="my-slider">
-                        <ul>
-                            <li>My slide</li>
-                            <li>Another slide</li>
-                            <li>My last slide</li>
-                        </ul>
-                    </div>
+
+                <div class="my-slider">
+                    <ul>
+                        <li><img src="slideshow/images/IMG_0171.jpg" /></li>
+                        <li><img src="slideshow/images/IMG_0336.jpg" /></li>
+                        <li><img src="slideshow/images/IMG_0636.jpg" /></li>
+                        <li><img src="slideshow/images/IMG_0637.jpg" /></li>
+                        <li><img src="slideshow/images/IMG_0638.jpg" /></li>
+                        <li><img src="slideshow/images/IMG_0639.jpg" /></li>
+                        <li><img src="slideshow/images/IMG_0640.jpg" /></li>
+                        <li><img src="slideshow/images/IMG_0641.jpg" /></li>
+                        <li><img src="slideshow/images/IMG_0642.jpg" /></li>
+                        <li><img src="slideshow/images/IMG_0643.jpg" /></li>
+                        <li><img src="slideshow/images/IMG_0644.jpg" /></li>
+                        <li><img src="slideshow/images/IMG_0645.jpg" /></li>
+                        <li><img src="slideshow/images/IMG_0648.jpg" /></li>
+                        <li><img src="slideshow/images/slide-1.jpg" /></li>
+                        <li><img src="slideshow/images/slide-2.jpg" /></li>
+                        <li><img src="slideshow/images/slide-3.jpg" /></li>
+                        <li><img src="slideshow/images/slide-4.jpg" /></li>
+                    </ul>
                 </div>
+
             </div>
         </div>
     </article>
@@ -52,7 +66,9 @@
 
 <script>
     jQuery(document).ready(function($) {
-        $('.my-slider').unslider();
+        $('.my-slider').unslider({
+            autoplay: true
+        });
     });
 </script>
 </body>
